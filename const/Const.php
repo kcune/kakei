@@ -7,10 +7,10 @@
     const DB_HOST = 'mysql.php.xdomain.ne.jp';
 
     //ユーザー名
-    const DB_USER = 'kcune_kusuri';
+    const DB_USER = 'kcune';
 
     //パスワード
-    const DB_PASS = 'kusuri';
+    const DB_PASS = 'kakei';
 
     //メッセージ
     const LOGIN_FAILER            = 'アカウント名またはパスワードが違います。';
