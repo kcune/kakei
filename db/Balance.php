@@ -31,6 +31,7 @@
             return $this->selectWkBalanceAll();
         }
 
+        //ワーククリア
         function wkBalanceClear()
         {
             $sql = 'delete from wk_balance ';
@@ -38,6 +39,7 @@
             $stmt->execute();
         }
 
+        //口座全表示
         function selectMediumAll()
         {            
             $sql = 'select id from medium where user_id=:user_id and is_deleted=0 order by id ';

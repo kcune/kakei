@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //口座の全表示
         public function selectMediumAll(int $user_id)
         {
             $sql = 'select * from medium where is_deleted=0 and user_id=:user_id; ';
@@ -19,6 +20,7 @@
 
         }
 
+        //口座の追加
         public function insertMedium(int $user_id,string $medium)
         {
             //最初の入力かどうか？
@@ -44,6 +46,7 @@
 
         }
 
+        //口座が存在しているか？
         function is_first_medium(int $user_id)
         {
             $sql = 'select * from medium where is_deleted=0 and user_id=:user_id; ';
@@ -60,6 +63,7 @@
 
         }
 
+        //前月繰越が存在しているか？
         function is_first_subjects(int $user_id)
         {
             $sql = "select * from subjects where is_deleted=0 and user_id=:user_id and account='前月繰越'; ";
@@ -76,6 +80,7 @@
 
         }
 
+        //口座の更新
         public function updateMedium(int $id,string $medium)
         {
             $sql = 'update medium set medium=:medium where id=:id ; ';
@@ -86,6 +91,7 @@
 
         }
 
+        //口座の消去
         public function deleteMedium(int $id)
         {
             $sql = 'update medium set is_deleted=1 where id=:id; ';
@@ -95,6 +101,7 @@
 
         }
 
+        //最小の口座
         public function minMedium(int $user_id)
         {
             $sql = 'select min(id) as min_id from medium where is_deleted=0 and user_id=:user_id; ';

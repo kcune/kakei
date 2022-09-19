@@ -44,6 +44,7 @@
 
         }
 
+        //管理者フラグ取得
         public function getAdminFlg(int $user_id)
         {
             $sql = 'select admin_flg from accounts where is_deleted=0 and id=:user_id; ';

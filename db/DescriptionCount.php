@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //摘要別の月別の金額のクロス集計
         public function selectDescriptionCrossMonthTotal(string $year)
         {
 
@@ -38,6 +39,7 @@
 
         }
 
+        //摘要別の月別の回数別のクロス集計
         public function selectDescriptionCrossMonthCount(string $year)
         {
 
@@ -68,6 +70,7 @@
 
         }
 
+        //摘要別の月別の金額別のクロス集計（スマホ用）
         public function selectDescriptionCrossMonthTotalPhone(string $year,string $month)
         {
 
@@ -91,6 +94,7 @@
 
         }
 
+        //摘要別の月別の回数別のクロス集計（スマホ用）
         public function selectDescriptionCrossMonthCountPhone(string $year,string $month)
         {
 

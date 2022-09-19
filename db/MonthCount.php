@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //月別の貸方のクロス集計
         public function selectCreditCrossMonth(string $year)
         {
 
@@ -36,6 +37,7 @@
 
         }
 
+        //月別の貸方のクロス集計（スマホ用）
         public function selectCreditCrossMonthPhone(string $year,string $month)
         {
 

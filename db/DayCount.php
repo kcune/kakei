@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //科目の上位10個の日ごとの合計
         public function selectAccountAll(string $year,string $month)
         {
 
@@ -27,6 +28,7 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
+        //貸方の日ごとのクロス集計
         public function selectCreditCross(string $year,string $month,array $rec)
         {
 
@@ -58,6 +60,7 @@
 
         }
 
+        //貸方の日ごとのクロス集計（スマホ用）
         public function selectCreditCrossPhone(string $year,string $month)
         {
 

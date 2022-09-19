@@ -510,6 +510,7 @@
             $this->calcBalance($user_id,$medium_id,$spent_date);
         }
 
+        //行の削除
         function deleteMoneyRecord(int $id)
         {
             $sql = 'update money set is_deleted=1 where id=:id; ';

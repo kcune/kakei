@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //年別貸方クロス集計
         public function selectCreditCrossYear()
         {
 
@@ -40,6 +41,7 @@
 
         }
 
+        //年別貸方クロス集計（スマホ用）
         public function selectCreditCrossYearPhone(string $year)
         {
 

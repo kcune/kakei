@@ -8,6 +8,7 @@
             parent::__construct();
         }
 
+        //お店ごとの月別のクロス集計
         public function selectShopCrossMonthTotal(string $year)
         {
 
@@ -37,6 +38,7 @@
 
         }
 
+        //お店ごとの月別のクロス集計（回数）
         public function selectShopCrossMonthCount(string $year)
         {
 
@@ -66,6 +68,7 @@
 
         }
 
+        //お店ごとの月別のクロス集計（スマホ用）
         public function selectShopCrossMonthTotalPhone(string $year,string $month)
         {
 
@@ -89,6 +92,7 @@
 
         }
 
+        //お店ごとの月別のクロス集計（回数）（スマホ用）
         public function selectShopCrossMonthCountPhone(string $year,string $month)
         {
 

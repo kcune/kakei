@@ -78,6 +78,7 @@
 
         }
 
+        //アカウント数
         public function admin_count()
         {
             $sql = 'select count(*) as cnt from accounts where is_deleted=0 and admin_flg=1; ';
@@ -87,6 +88,7 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
+        //管理者が存在しているか？
         public function is_admin(int $id)
         {
             $sql = 'select admin_flg from accounts where is_deleted=0 and id=:id; ';
