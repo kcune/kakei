@@ -1,0 +1,10 @@
+create table wk_money_after(
+user_id int not null comment 'ユーザーID',
+medium_id  int not null comment '口座ID',
+spent_date date not null comment '日付',
+line int not null comment '行',
+account int not null comment '勘定科目',
+description varchar(32) not null comment '摘要',
+shop varchar(32) not null comment '購入店',
+debit int comment '借方',
+credit int comment '貸方') default charset=utf8mb4;

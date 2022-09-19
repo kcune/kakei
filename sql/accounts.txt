@@ -1,0 +1,8 @@
+create table accounts(
+id int auto_increment primary key not null comment 'ID',
+user_name varchar(32) not null comment 'アカウント名',
+pass  varchar(255) not null comment 'パスワード',
+admin_flg tinyint not null default 0 comment '管理者フラグ',
+is_deleted tinyint not null default 0 comment '削除フラグ',
+create_date_time datetime not null default current_timestamp comment '作成日時',
+update_date_time datetime not null default current_timestamp on update current_timestamp comment '更新日時') default charset=utf8mb4;

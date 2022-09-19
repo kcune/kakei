@@ -1,0 +1,9 @@
+create table medium(
+id int auto_increment primary key not null comment 'ID',
+user_id int not null comment 'ユーザーID',
+medium varchar(32) not null comment '口座名',
+is_deleted tinyint not null default 0 comment '削除フラグ',
+create_date_time datetime not null default current_timestamp comment '作成日時',
+update_date_time datetime not null default current_timestamp on update current_timestamp comment '更新日時') default charset=utf8mb4;
+
+ALTER TABLE medium ADD INDEX index_name(user_id);

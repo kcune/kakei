@@ -1,0 +1,8 @@
+create table wk_balance(
+id int auto_increment primary key not null comment 'ID',
+user_id int not null comment 'ユーザーID',
+medium_id  int not null comment '口座ID',
+balance int comment '残高',
+is_deleted tinyint not null default 0 comment '削除フラグ',
+create_date_time datetime not null default current_timestamp comment '作成日時',
+update_date_time datetime not null default current_timestamp on update current_timestamp comment '更新日時') default charset=utf8mb4;

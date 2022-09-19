@@ -1,0 +1,7 @@
+create table wk_money_subjects_sum(
+user_id int not null comment 'ユーザーID',
+spent_date date not null comment '日付',
+account int not null comment '勘定科目',
+account_sum int comment '科目合計',
+create_date_time datetime not null default current_timestamp comment '作成日時',
+update_date_time datetime not null default current_timestamp on update current_timestamp comment '更新日時') default charset=utf8mb4;
