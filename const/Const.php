@@ -4,13 +4,13 @@
     const DB_NAME = 'kcune_kakei';
 
     //ホスト名
-    const DB_HOST = 'mysql1.php.xdomain.ne.jp';
+    const DB_HOST = 'mysql.php.xdomain.ne.jp';
 
     //ユーザー名
     const DB_USER = 'kcune_kusuri';
 
     //パスワード
-    const DB_PASS = 'kusuri3729';
+    const DB_PASS = 'kusuri';
 
     //メッセージ
     const LOGIN_FAILER            = 'アカウント名またはパスワードが違います。';
