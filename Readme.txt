@@ -2,7 +2,7 @@ Web家計簿
 
    web版の家計簿です。web版なのでインターネットの環境があればどこからでも家計管理できます。
 
-  URL:http://kcune.php.xdomain/kakei/kakei/login.php
+  URL:http://kcune.php.xdomain.jp/kakei/kakei/login.php
 
 使い方
 １．指定されたIDとパスワードでログインする
